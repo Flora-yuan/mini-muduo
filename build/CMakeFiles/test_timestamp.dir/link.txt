@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_timestamp.dir/tests/test_timestamp.cc.o -o tests/test_timestamp  libmini_muduo.a 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/example_basic.dir/examples/example_basic.cc.o -o examples/example_basic  libmini_muduo.a 

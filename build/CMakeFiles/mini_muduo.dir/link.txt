@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmini_muduo.a CMakeFiles/mini_muduo.dir/src/base/Logger.cc.o CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.o
+/usr/bin/ranlib libmini_muduo.a
