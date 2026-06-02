@@ -66,6 +66,9 @@ CMAKE_BINARY_DIR = /home/flora/projects/mini_muduo/build
 all: CMakeFiles/mini_muduo.dir/all
 all: CMakeFiles/example_basic.dir/all
 all: CMakeFiles/test_timestamp.dir/all
+all: CMakeFiles/test_socket_wrappers.dir/all
+all: CMakeFiles/test_epoll_poller.dir/all
+all: CMakeFiles/blocking_echo_server.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +79,9 @@ preinstall:
 clean: CMakeFiles/mini_muduo.dir/clean
 clean: CMakeFiles/example_basic.dir/clean
 clean: CMakeFiles/test_timestamp.dir/clean
+clean: CMakeFiles/test_socket_wrappers.dir/clean
+clean: CMakeFiles/test_epoll_poller.dir/clean
+clean: CMakeFiles/blocking_echo_server.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,12 +91,12 @@ clean: CMakeFiles/test_timestamp.dir/clean
 CMakeFiles/mini_muduo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=3,4,5 "Built target mini_muduo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13 "Built target mini_muduo"
 .PHONY : CMakeFiles/mini_muduo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mini_muduo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mini_muduo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 0
 .PHONY : CMakeFiles/mini_muduo.dir/rule
@@ -111,12 +117,12 @@ CMakeFiles/mini_muduo.dir/clean:
 CMakeFiles/example_basic.dir/all: CMakeFiles/mini_muduo.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_basic.dir/build.make CMakeFiles/example_basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=1,2 "Built target example_basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=3,4 "Built target example_basic"
 .PHONY : CMakeFiles/example_basic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/example_basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/example_basic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 0
 .PHONY : CMakeFiles/example_basic.dir/rule
@@ -137,12 +143,12 @@ CMakeFiles/example_basic.dir/clean:
 CMakeFiles/test_timestamp.dir/all: CMakeFiles/mini_muduo.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timestamp.dir/build.make CMakeFiles/test_timestamp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timestamp.dir/build.make CMakeFiles/test_timestamp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=6,7 "Built target test_timestamp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=18,19 "Built target test_timestamp"
 .PHONY : CMakeFiles/test_timestamp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_timestamp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_timestamp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_timestamp.dir/rule
@@ -155,6 +161,84 @@ test_timestamp: CMakeFiles/test_timestamp.dir/rule
 CMakeFiles/test_timestamp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timestamp.dir/build.make CMakeFiles/test_timestamp.dir/clean
 .PHONY : CMakeFiles/test_timestamp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_socket_wrappers.dir
+
+# All Build rule for target.
+CMakeFiles/test_socket_wrappers.dir/all: CMakeFiles/mini_muduo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=16,17 "Built target test_socket_wrappers"
+.PHONY : CMakeFiles/test_socket_wrappers.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_socket_wrappers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_socket_wrappers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_socket_wrappers.dir/rule
+
+# Convenience name for target.
+test_socket_wrappers: CMakeFiles/test_socket_wrappers.dir/rule
+.PHONY : test_socket_wrappers
+
+# clean rule for target.
+CMakeFiles/test_socket_wrappers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/clean
+.PHONY : CMakeFiles/test_socket_wrappers.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_epoll_poller.dir
+
+# All Build rule for target.
+CMakeFiles/test_epoll_poller.dir/all: CMakeFiles/mini_muduo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=14,15 "Built target test_epoll_poller"
+.PHONY : CMakeFiles/test_epoll_poller.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_epoll_poller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_epoll_poller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_epoll_poller.dir/rule
+
+# Convenience name for target.
+test_epoll_poller: CMakeFiles/test_epoll_poller.dir/rule
+.PHONY : test_epoll_poller
+
+# clean rule for target.
+CMakeFiles/test_epoll_poller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/clean
+.PHONY : CMakeFiles/test_epoll_poller.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/blocking_echo_server.dir
+
+# All Build rule for target.
+CMakeFiles/blocking_echo_server.dir/all: CMakeFiles/mini_muduo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=1,2 "Built target blocking_echo_server"
+.PHONY : CMakeFiles/blocking_echo_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/blocking_echo_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/blocking_echo_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flora/projects/mini_muduo/build/CMakeFiles 0
+.PHONY : CMakeFiles/blocking_echo_server.dir/rule
+
+# Convenience name for target.
+blocking_echo_server: CMakeFiles/blocking_echo_server.dir/rule
+.PHONY : blocking_echo_server
+
+# clean rule for target.
+CMakeFiles/blocking_echo_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/clean
+.PHONY : CMakeFiles/blocking_echo_server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

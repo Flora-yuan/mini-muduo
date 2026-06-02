@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_socket_wrappers.dir/tests/test_socket_wrappers.cc.o -o tests/test_socket_wrappers  libmini_muduo.a 

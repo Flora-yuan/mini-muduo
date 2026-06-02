@@ -97,19 +97,115 @@ CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/base/Timestamp.cc -o CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.s
 
+CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o: CMakeFiles/mini_muduo.dir/flags.make
+CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o: /home/flora/projects/mini_muduo/src/net/Channel.cc
+CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o: CMakeFiles/mini_muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o -MF CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o.d -o CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o -c /home/flora/projects/mini_muduo/src/net/Channel.cc
+
+CMakeFiles/mini_muduo.dir/src/net/Channel.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_muduo.dir/src/net/Channel.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flora/projects/mini_muduo/src/net/Channel.cc > CMakeFiles/mini_muduo.dir/src/net/Channel.cc.i
+
+CMakeFiles/mini_muduo.dir/src/net/Channel.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/Channel.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/Channel.cc -o CMakeFiles/mini_muduo.dir/src/net/Channel.cc.s
+
+CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o: CMakeFiles/mini_muduo.dir/flags.make
+CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o: /home/flora/projects/mini_muduo/src/net/EPollPoller.cc
+CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o: CMakeFiles/mini_muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o -MF CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o.d -o CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o -c /home/flora/projects/mini_muduo/src/net/EPollPoller.cc
+
+CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flora/projects/mini_muduo/src/net/EPollPoller.cc > CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.i
+
+CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/EPollPoller.cc -o CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.s
+
+CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o: CMakeFiles/mini_muduo.dir/flags.make
+CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o: /home/flora/projects/mini_muduo/src/net/InetAddress.cc
+CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o: CMakeFiles/mini_muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o -MF CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o.d -o CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o -c /home/flora/projects/mini_muduo/src/net/InetAddress.cc
+
+CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flora/projects/mini_muduo/src/net/InetAddress.cc > CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.i
+
+CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/InetAddress.cc -o CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.s
+
+CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o: CMakeFiles/mini_muduo.dir/flags.make
+CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o: /home/flora/projects/mini_muduo/src/net/Poller.cc
+CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o: CMakeFiles/mini_muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o -MF CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o.d -o CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o -c /home/flora/projects/mini_muduo/src/net/Poller.cc
+
+CMakeFiles/mini_muduo.dir/src/net/Poller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_muduo.dir/src/net/Poller.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flora/projects/mini_muduo/src/net/Poller.cc > CMakeFiles/mini_muduo.dir/src/net/Poller.cc.i
+
+CMakeFiles/mini_muduo.dir/src/net/Poller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/Poller.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/Poller.cc -o CMakeFiles/mini_muduo.dir/src/net/Poller.cc.s
+
+CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o: CMakeFiles/mini_muduo.dir/flags.make
+CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o: /home/flora/projects/mini_muduo/src/net/SocketsOps.cc
+CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o: CMakeFiles/mini_muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o -MF CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o.d -o CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o -c /home/flora/projects/mini_muduo/src/net/SocketsOps.cc
+
+CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flora/projects/mini_muduo/src/net/SocketsOps.cc > CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.i
+
+CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/SocketsOps.cc -o CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.s
+
+CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o: CMakeFiles/mini_muduo.dir/flags.make
+CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o: /home/flora/projects/mini_muduo/src/net/Socket.cc
+CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o: CMakeFiles/mini_muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o -MF CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o.d -o CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o -c /home/flora/projects/mini_muduo/src/net/Socket.cc
+
+CMakeFiles/mini_muduo.dir/src/net/Socket.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_muduo.dir/src/net/Socket.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flora/projects/mini_muduo/src/net/Socket.cc > CMakeFiles/mini_muduo.dir/src/net/Socket.cc.i
+
+CMakeFiles/mini_muduo.dir/src/net/Socket.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/Socket.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/Socket.cc -o CMakeFiles/mini_muduo.dir/src/net/Socket.cc.s
+
 # Object files for target mini_muduo
 mini_muduo_OBJECTS = \
 "CMakeFiles/mini_muduo.dir/src/base/Logger.cc.o" \
-"CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.o"
+"CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.o" \
+"CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o" \
+"CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o" \
+"CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o" \
+"CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o" \
+"CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o" \
+"CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o"
 
 # External object files for target mini_muduo
 mini_muduo_EXTERNAL_OBJECTS =
 
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/base/Logger.cc.o
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.o
+libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o
+libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o
+libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o
+libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o
+libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o
+libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/build.make
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmini_muduo.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libmini_muduo.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/mini_muduo.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mini_muduo.dir/link.txt --verbose=$(VERBOSE)
 

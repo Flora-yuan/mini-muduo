@@ -155,6 +155,69 @@ test_timestamp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timestamp.dir/build.make CMakeFiles/test_timestamp.dir/build
 .PHONY : test_timestamp/fast
 
+#=============================================================================
+# Target rules for targets named test_socket_wrappers
+
+# Build rule for target.
+test_socket_wrappers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_socket_wrappers
+.PHONY : test_socket_wrappers
+
+# fast build rule for target.
+test_socket_wrappers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/build
+.PHONY : test_socket_wrappers/fast
+
+#=============================================================================
+# Target rules for targets named test_epoll_poller
+
+# Build rule for target.
+test_epoll_poller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_epoll_poller
+.PHONY : test_epoll_poller
+
+# fast build rule for target.
+test_epoll_poller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/build
+.PHONY : test_epoll_poller/fast
+
+#=============================================================================
+# Target rules for targets named blocking_echo_server
+
+# Build rule for target.
+blocking_echo_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blocking_echo_server
+.PHONY : blocking_echo_server
+
+# fast build rule for target.
+blocking_echo_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/build
+.PHONY : blocking_echo_server/fast
+
+examples/blocking_echo_server.o: examples/blocking_echo_server.cc.o
+.PHONY : examples/blocking_echo_server.o
+
+# target to build an object file
+examples/blocking_echo_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/examples/blocking_echo_server.cc.o
+.PHONY : examples/blocking_echo_server.cc.o
+
+examples/blocking_echo_server.i: examples/blocking_echo_server.cc.i
+.PHONY : examples/blocking_echo_server.i
+
+# target to preprocess a source file
+examples/blocking_echo_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/examples/blocking_echo_server.cc.i
+.PHONY : examples/blocking_echo_server.cc.i
+
+examples/blocking_echo_server.s: examples/blocking_echo_server.cc.s
+.PHONY : examples/blocking_echo_server.s
+
+# target to generate assembly for a file
+examples/blocking_echo_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/examples/blocking_echo_server.cc.s
+.PHONY : examples/blocking_echo_server.cc.s
+
 examples/example_basic.o: examples/example_basic.cc.o
 .PHONY : examples/example_basic.o
 
@@ -227,6 +290,198 @@ src/base/Timestamp.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.s
 .PHONY : src/base/Timestamp.cc.s
 
+src/net/Channel.o: src/net/Channel.cc.o
+.PHONY : src/net/Channel.o
+
+# target to build an object file
+src/net/Channel.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o
+.PHONY : src/net/Channel.cc.o
+
+src/net/Channel.i: src/net/Channel.cc.i
+.PHONY : src/net/Channel.i
+
+# target to preprocess a source file
+src/net/Channel.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Channel.cc.i
+.PHONY : src/net/Channel.cc.i
+
+src/net/Channel.s: src/net/Channel.cc.s
+.PHONY : src/net/Channel.s
+
+# target to generate assembly for a file
+src/net/Channel.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Channel.cc.s
+.PHONY : src/net/Channel.cc.s
+
+src/net/EPollPoller.o: src/net/EPollPoller.cc.o
+.PHONY : src/net/EPollPoller.o
+
+# target to build an object file
+src/net/EPollPoller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o
+.PHONY : src/net/EPollPoller.cc.o
+
+src/net/EPollPoller.i: src/net/EPollPoller.cc.i
+.PHONY : src/net/EPollPoller.i
+
+# target to preprocess a source file
+src/net/EPollPoller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.i
+.PHONY : src/net/EPollPoller.cc.i
+
+src/net/EPollPoller.s: src/net/EPollPoller.cc.s
+.PHONY : src/net/EPollPoller.s
+
+# target to generate assembly for a file
+src/net/EPollPoller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.s
+.PHONY : src/net/EPollPoller.cc.s
+
+src/net/InetAddress.o: src/net/InetAddress.cc.o
+.PHONY : src/net/InetAddress.o
+
+# target to build an object file
+src/net/InetAddress.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.o
+.PHONY : src/net/InetAddress.cc.o
+
+src/net/InetAddress.i: src/net/InetAddress.cc.i
+.PHONY : src/net/InetAddress.i
+
+# target to preprocess a source file
+src/net/InetAddress.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.i
+.PHONY : src/net/InetAddress.cc.i
+
+src/net/InetAddress.s: src/net/InetAddress.cc.s
+.PHONY : src/net/InetAddress.s
+
+# target to generate assembly for a file
+src/net/InetAddress.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/InetAddress.cc.s
+.PHONY : src/net/InetAddress.cc.s
+
+src/net/Poller.o: src/net/Poller.cc.o
+.PHONY : src/net/Poller.o
+
+# target to build an object file
+src/net/Poller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o
+.PHONY : src/net/Poller.cc.o
+
+src/net/Poller.i: src/net/Poller.cc.i
+.PHONY : src/net/Poller.i
+
+# target to preprocess a source file
+src/net/Poller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Poller.cc.i
+.PHONY : src/net/Poller.cc.i
+
+src/net/Poller.s: src/net/Poller.cc.s
+.PHONY : src/net/Poller.s
+
+# target to generate assembly for a file
+src/net/Poller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Poller.cc.s
+.PHONY : src/net/Poller.cc.s
+
+src/net/Socket.o: src/net/Socket.cc.o
+.PHONY : src/net/Socket.o
+
+# target to build an object file
+src/net/Socket.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o
+.PHONY : src/net/Socket.cc.o
+
+src/net/Socket.i: src/net/Socket.cc.i
+.PHONY : src/net/Socket.i
+
+# target to preprocess a source file
+src/net/Socket.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Socket.cc.i
+.PHONY : src/net/Socket.cc.i
+
+src/net/Socket.s: src/net/Socket.cc.s
+.PHONY : src/net/Socket.s
+
+# target to generate assembly for a file
+src/net/Socket.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Socket.cc.s
+.PHONY : src/net/Socket.cc.s
+
+src/net/SocketsOps.o: src/net/SocketsOps.cc.o
+.PHONY : src/net/SocketsOps.o
+
+# target to build an object file
+src/net/SocketsOps.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o
+.PHONY : src/net/SocketsOps.cc.o
+
+src/net/SocketsOps.i: src/net/SocketsOps.cc.i
+.PHONY : src/net/SocketsOps.i
+
+# target to preprocess a source file
+src/net/SocketsOps.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.i
+.PHONY : src/net/SocketsOps.cc.i
+
+src/net/SocketsOps.s: src/net/SocketsOps.cc.s
+.PHONY : src/net/SocketsOps.s
+
+# target to generate assembly for a file
+src/net/SocketsOps.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.s
+.PHONY : src/net/SocketsOps.cc.s
+
+tests/test_epoll_poller.o: tests/test_epoll_poller.cc.o
+.PHONY : tests/test_epoll_poller.o
+
+# target to build an object file
+tests/test_epoll_poller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/tests/test_epoll_poller.cc.o
+.PHONY : tests/test_epoll_poller.cc.o
+
+tests/test_epoll_poller.i: tests/test_epoll_poller.cc.i
+.PHONY : tests/test_epoll_poller.i
+
+# target to preprocess a source file
+tests/test_epoll_poller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/tests/test_epoll_poller.cc.i
+.PHONY : tests/test_epoll_poller.cc.i
+
+tests/test_epoll_poller.s: tests/test_epoll_poller.cc.s
+.PHONY : tests/test_epoll_poller.s
+
+# target to generate assembly for a file
+tests/test_epoll_poller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/tests/test_epoll_poller.cc.s
+.PHONY : tests/test_epoll_poller.cc.s
+
+tests/test_socket_wrappers.o: tests/test_socket_wrappers.cc.o
+.PHONY : tests/test_socket_wrappers.o
+
+# target to build an object file
+tests/test_socket_wrappers.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/tests/test_socket_wrappers.cc.o
+.PHONY : tests/test_socket_wrappers.cc.o
+
+tests/test_socket_wrappers.i: tests/test_socket_wrappers.cc.i
+.PHONY : tests/test_socket_wrappers.i
+
+# target to preprocess a source file
+tests/test_socket_wrappers.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/tests/test_socket_wrappers.cc.i
+.PHONY : tests/test_socket_wrappers.cc.i
+
+tests/test_socket_wrappers.s: tests/test_socket_wrappers.cc.s
+.PHONY : tests/test_socket_wrappers.s
+
+# target to generate assembly for a file
+tests/test_socket_wrappers.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/tests/test_socket_wrappers.cc.s
+.PHONY : tests/test_socket_wrappers.cc.s
+
 tests/test_timestamp.o: tests/test_timestamp.cc.o
 .PHONY : tests/test_timestamp.o
 
@@ -259,9 +514,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... blocking_echo_server"
 	@echo "... example_basic"
 	@echo "... mini_muduo"
+	@echo "... test_epoll_poller"
+	@echo "... test_socket_wrappers"
 	@echo "... test_timestamp"
+	@echo "... examples/blocking_echo_server.o"
+	@echo "... examples/blocking_echo_server.i"
+	@echo "... examples/blocking_echo_server.s"
 	@echo "... examples/example_basic.o"
 	@echo "... examples/example_basic.i"
 	@echo "... examples/example_basic.s"
@@ -271,6 +532,30 @@ help:
 	@echo "... src/base/Timestamp.o"
 	@echo "... src/base/Timestamp.i"
 	@echo "... src/base/Timestamp.s"
+	@echo "... src/net/Channel.o"
+	@echo "... src/net/Channel.i"
+	@echo "... src/net/Channel.s"
+	@echo "... src/net/EPollPoller.o"
+	@echo "... src/net/EPollPoller.i"
+	@echo "... src/net/EPollPoller.s"
+	@echo "... src/net/InetAddress.o"
+	@echo "... src/net/InetAddress.i"
+	@echo "... src/net/InetAddress.s"
+	@echo "... src/net/Poller.o"
+	@echo "... src/net/Poller.i"
+	@echo "... src/net/Poller.s"
+	@echo "... src/net/Socket.o"
+	@echo "... src/net/Socket.i"
+	@echo "... src/net/Socket.s"
+	@echo "... src/net/SocketsOps.o"
+	@echo "... src/net/SocketsOps.i"
+	@echo "... src/net/SocketsOps.s"
+	@echo "... tests/test_epoll_poller.o"
+	@echo "... tests/test_epoll_poller.i"
+	@echo "... tests/test_epoll_poller.s"
+	@echo "... tests/test_socket_wrappers.o"
+	@echo "... tests/test_socket_wrappers.i"
+	@echo "... tests/test_socket_wrappers.s"
 	@echo "... tests/test_timestamp.o"
 	@echo "... tests/test_timestamp.i"
 	@echo "... tests/test_timestamp.s"
