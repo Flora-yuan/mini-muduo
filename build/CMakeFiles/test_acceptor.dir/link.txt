@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_acceptor.dir/tests/test_acceptor.cc.o -o tests/test_acceptor  libmini_muduo.a -lpthread 

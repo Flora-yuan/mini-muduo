@@ -8,13 +8,16 @@
 
 namespace mini_muduo {
 
+class EventLoop;
+
 // Channel 封装一个 fd 上关注的事件和事件发生后的回调。
-// 当前阶段它只保存状态，不持有 EventLoop，也不会自动更新 Poller。
+// 绑定 EventLoop 后，事件关注变化会自动同步到 Poller。
 class Channel : public nocopyable {
 public:
     using EventCallback = std::function<void()>;
 
     explicit Channel(int fd);
+    Channel(EventLoop* loop, int fd);
     ~Channel();
 
     int fd() const;
@@ -42,11 +45,14 @@ public:
     void setErrorCallback(EventCallback cb);
 
     void handleEvent();
+    void remove();
 
 private:
+    void update();
     void handleEventWithGuard();
 
 private:
+    EventLoop* loop_;
     const int fd_;
     uint32_t events_;
     uint32_t revents_;

@@ -131,5 +131,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_timestamp.dir/DependInfo.cmake"
   "CMakeFiles/test_socket_wrappers.dir/DependInfo.cmake"
   "CMakeFiles/test_epoll_poller.dir/DependInfo.cmake"
+  "CMakeFiles/test_event_loop.dir/DependInfo.cmake"
+  "CMakeFiles/test_acceptor.dir/DependInfo.cmake"
   "CMakeFiles/blocking_echo_server.dir/DependInfo.cmake"
   )

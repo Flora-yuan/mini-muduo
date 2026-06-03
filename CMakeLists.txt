@@ -11,8 +11,10 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 add_library(mini_muduo STATIC
     src/base/Logger.cc
     src/base/Timestamp.cc
+    src/net/Acceptor.cc
     src/net/Channel.cc
     src/net/EPollPoller.cc
+    src/net/EventLoop.cc
     src/net/InetAddress.cc
     src/net/Poller.cc
     src/net/SocketsOps.cc
@@ -48,6 +50,22 @@ add_executable(test_epoll_poller
 )
 target_link_libraries(test_epoll_poller mini_muduo)
 set_target_properties(test_epoll_poller PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
+)
+
+add_executable(test_event_loop
+    tests/test_event_loop.cc
+)
+target_link_libraries(test_event_loop mini_muduo pthread)
+set_target_properties(test_event_loop PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
+)
+
+add_executable(test_acceptor
+    tests/test_acceptor.cc
+)
+target_link_libraries(test_acceptor mini_muduo pthread)
+set_target_properties(test_acceptor PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
 )
 

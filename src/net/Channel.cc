@@ -1,5 +1,7 @@
 #include "net/Channel.h"
 
+#include "net/EventLoop.h"
+
 #include <sys/epoll.h>
 
 #include <utility>
@@ -23,7 +25,17 @@ const int kNew = -1;
 }  // namespace
 
 Channel::Channel(int fd)
-    : fd_(fd),
+    : loop_(nullptr),
+      fd_(fd),
+      events_(kNoneEvent),
+      revents_(kNoneEvent),
+      index_(kNew)
+{
+}
+
+Channel::Channel(EventLoop* loop, int fd)
+    : loop_(loop),
+      fd_(fd),
       events_(kNoneEvent),
       revents_(kNoneEvent),
       index_(kNew)
@@ -62,26 +74,31 @@ bool Channel::isNoneEvent() const
 void Channel::enableReading()
 {
     events_ |= kReadEvent;
+    update();
 }
 
 void Channel::disableReading()
 {
     events_ &= ~kReadEvent;
+    update();
 }
 
 void Channel::enableWriting()
 {
     events_ |= kWriteEvent;
+    update();
 }
 
 void Channel::disableWriting()
 {
     events_ &= ~kWriteEvent;
+    update();
 }
 
 void Channel::disableAll()
 {
     events_ = kNoneEvent;
+    update();
 }
 
 bool Channel::isWriting() const
@@ -127,6 +144,20 @@ void Channel::setErrorCallback(EventCallback cb)
 void Channel::handleEvent()
 {
     handleEventWithGuard();
+}
+
+void Channel::remove()
+{
+    if (loop_ != nullptr) {
+        loop_->removeChannel(this);
+    }
+}
+
+void Channel::update()
+{
+    if (loop_ != nullptr) {
+        loop_->updateChannel(this);
+    }
 }
 
 void Channel::handleEventWithGuard()

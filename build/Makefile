@@ -182,6 +182,32 @@ test_epoll_poller/fast:
 .PHONY : test_epoll_poller/fast
 
 #=============================================================================
+# Target rules for targets named test_event_loop
+
+# Build rule for target.
+test_event_loop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_event_loop
+.PHONY : test_event_loop
+
+# fast build rule for target.
+test_event_loop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop.dir/build.make CMakeFiles/test_event_loop.dir/build
+.PHONY : test_event_loop/fast
+
+#=============================================================================
+# Target rules for targets named test_acceptor
+
+# Build rule for target.
+test_acceptor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_acceptor
+.PHONY : test_acceptor
+
+# fast build rule for target.
+test_acceptor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptor.dir/build.make CMakeFiles/test_acceptor.dir/build
+.PHONY : test_acceptor/fast
+
+#=============================================================================
 # Target rules for targets named blocking_echo_server
 
 # Build rule for target.
@@ -290,6 +316,30 @@ src/base/Timestamp.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.s
 .PHONY : src/base/Timestamp.cc.s
 
+src/net/Acceptor.o: src/net/Acceptor.cc.o
+.PHONY : src/net/Acceptor.o
+
+# target to build an object file
+src/net/Acceptor.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.o
+.PHONY : src/net/Acceptor.cc.o
+
+src/net/Acceptor.i: src/net/Acceptor.cc.i
+.PHONY : src/net/Acceptor.i
+
+# target to preprocess a source file
+src/net/Acceptor.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.i
+.PHONY : src/net/Acceptor.cc.i
+
+src/net/Acceptor.s: src/net/Acceptor.cc.s
+.PHONY : src/net/Acceptor.s
+
+# target to generate assembly for a file
+src/net/Acceptor.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.s
+.PHONY : src/net/Acceptor.cc.s
+
 src/net/Channel.o: src/net/Channel.cc.o
 .PHONY : src/net/Channel.o
 
@@ -337,6 +387,30 @@ src/net/EPollPoller.s: src/net/EPollPoller.cc.s
 src/net/EPollPoller.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.s
 .PHONY : src/net/EPollPoller.cc.s
+
+src/net/EventLoop.o: src/net/EventLoop.cc.o
+.PHONY : src/net/EventLoop.o
+
+# target to build an object file
+src/net/EventLoop.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoop.cc.o
+.PHONY : src/net/EventLoop.cc.o
+
+src/net/EventLoop.i: src/net/EventLoop.cc.i
+.PHONY : src/net/EventLoop.i
+
+# target to preprocess a source file
+src/net/EventLoop.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoop.cc.i
+.PHONY : src/net/EventLoop.cc.i
+
+src/net/EventLoop.s: src/net/EventLoop.cc.s
+.PHONY : src/net/EventLoop.s
+
+# target to generate assembly for a file
+src/net/EventLoop.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoop.cc.s
+.PHONY : src/net/EventLoop.cc.s
 
 src/net/InetAddress.o: src/net/InetAddress.cc.o
 .PHONY : src/net/InetAddress.o
@@ -434,6 +508,30 @@ src/net/SocketsOps.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.s
 .PHONY : src/net/SocketsOps.cc.s
 
+tests/test_acceptor.o: tests/test_acceptor.cc.o
+.PHONY : tests/test_acceptor.o
+
+# target to build an object file
+tests/test_acceptor.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptor.dir/build.make CMakeFiles/test_acceptor.dir/tests/test_acceptor.cc.o
+.PHONY : tests/test_acceptor.cc.o
+
+tests/test_acceptor.i: tests/test_acceptor.cc.i
+.PHONY : tests/test_acceptor.i
+
+# target to preprocess a source file
+tests/test_acceptor.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptor.dir/build.make CMakeFiles/test_acceptor.dir/tests/test_acceptor.cc.i
+.PHONY : tests/test_acceptor.cc.i
+
+tests/test_acceptor.s: tests/test_acceptor.cc.s
+.PHONY : tests/test_acceptor.s
+
+# target to generate assembly for a file
+tests/test_acceptor.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptor.dir/build.make CMakeFiles/test_acceptor.dir/tests/test_acceptor.cc.s
+.PHONY : tests/test_acceptor.cc.s
+
 tests/test_epoll_poller.o: tests/test_epoll_poller.cc.o
 .PHONY : tests/test_epoll_poller.o
 
@@ -457,6 +555,30 @@ tests/test_epoll_poller.s: tests/test_epoll_poller.cc.s
 tests/test_epoll_poller.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_epoll_poller.dir/build.make CMakeFiles/test_epoll_poller.dir/tests/test_epoll_poller.cc.s
 .PHONY : tests/test_epoll_poller.cc.s
+
+tests/test_event_loop.o: tests/test_event_loop.cc.o
+.PHONY : tests/test_event_loop.o
+
+# target to build an object file
+tests/test_event_loop.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop.dir/build.make CMakeFiles/test_event_loop.dir/tests/test_event_loop.cc.o
+.PHONY : tests/test_event_loop.cc.o
+
+tests/test_event_loop.i: tests/test_event_loop.cc.i
+.PHONY : tests/test_event_loop.i
+
+# target to preprocess a source file
+tests/test_event_loop.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop.dir/build.make CMakeFiles/test_event_loop.dir/tests/test_event_loop.cc.i
+.PHONY : tests/test_event_loop.cc.i
+
+tests/test_event_loop.s: tests/test_event_loop.cc.s
+.PHONY : tests/test_event_loop.s
+
+# target to generate assembly for a file
+tests/test_event_loop.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop.dir/build.make CMakeFiles/test_event_loop.dir/tests/test_event_loop.cc.s
+.PHONY : tests/test_event_loop.cc.s
 
 tests/test_socket_wrappers.o: tests/test_socket_wrappers.cc.o
 .PHONY : tests/test_socket_wrappers.o
@@ -517,7 +639,9 @@ help:
 	@echo "... blocking_echo_server"
 	@echo "... example_basic"
 	@echo "... mini_muduo"
+	@echo "... test_acceptor"
 	@echo "... test_epoll_poller"
+	@echo "... test_event_loop"
 	@echo "... test_socket_wrappers"
 	@echo "... test_timestamp"
 	@echo "... examples/blocking_echo_server.o"
@@ -532,12 +656,18 @@ help:
 	@echo "... src/base/Timestamp.o"
 	@echo "... src/base/Timestamp.i"
 	@echo "... src/base/Timestamp.s"
+	@echo "... src/net/Acceptor.o"
+	@echo "... src/net/Acceptor.i"
+	@echo "... src/net/Acceptor.s"
 	@echo "... src/net/Channel.o"
 	@echo "... src/net/Channel.i"
 	@echo "... src/net/Channel.s"
 	@echo "... src/net/EPollPoller.o"
 	@echo "... src/net/EPollPoller.i"
 	@echo "... src/net/EPollPoller.s"
+	@echo "... src/net/EventLoop.o"
+	@echo "... src/net/EventLoop.i"
+	@echo "... src/net/EventLoop.s"
 	@echo "... src/net/InetAddress.o"
 	@echo "... src/net/InetAddress.i"
 	@echo "... src/net/InetAddress.s"
@@ -550,9 +680,15 @@ help:
 	@echo "... src/net/SocketsOps.o"
 	@echo "... src/net/SocketsOps.i"
 	@echo "... src/net/SocketsOps.s"
+	@echo "... tests/test_acceptor.o"
+	@echo "... tests/test_acceptor.i"
+	@echo "... tests/test_acceptor.s"
 	@echo "... tests/test_epoll_poller.o"
 	@echo "... tests/test_epoll_poller.i"
 	@echo "... tests/test_epoll_poller.s"
+	@echo "... tests/test_event_loop.o"
+	@echo "... tests/test_event_loop.i"
+	@echo "... tests/test_event_loop.s"
 	@echo "... tests/test_socket_wrappers.o"
 	@echo "... tests/test_socket_wrappers.i"
 	@echo "... tests/test_socket_wrappers.s"
