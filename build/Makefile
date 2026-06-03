@@ -195,6 +195,32 @@ test_event_loop/fast:
 .PHONY : test_event_loop/fast
 
 #=============================================================================
+# Target rules for targets named test_event_loop_thread
+
+# Build rule for target.
+test_event_loop_thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_event_loop_thread
+.PHONY : test_event_loop_thread
+
+# fast build rule for target.
+test_event_loop_thread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread.dir/build.make CMakeFiles/test_event_loop_thread.dir/build
+.PHONY : test_event_loop_thread/fast
+
+#=============================================================================
+# Target rules for targets named test_event_loop_thread_pool
+
+# Build rule for target.
+test_event_loop_thread_pool: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_event_loop_thread_pool
+.PHONY : test_event_loop_thread_pool
+
+# fast build rule for target.
+test_event_loop_thread_pool/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread_pool.dir/build.make CMakeFiles/test_event_loop_thread_pool.dir/build
+.PHONY : test_event_loop_thread_pool/fast
+
+#=============================================================================
 # Target rules for targets named test_acceptor
 
 # Build rule for target.
@@ -512,6 +538,54 @@ src/net/EventLoop.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoop.cc.s
 .PHONY : src/net/EventLoop.cc.s
 
+src/net/EventLoopThread.o: src/net/EventLoopThread.cc.o
+.PHONY : src/net/EventLoopThread.o
+
+# target to build an object file
+src/net/EventLoopThread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoopThread.cc.o
+.PHONY : src/net/EventLoopThread.cc.o
+
+src/net/EventLoopThread.i: src/net/EventLoopThread.cc.i
+.PHONY : src/net/EventLoopThread.i
+
+# target to preprocess a source file
+src/net/EventLoopThread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoopThread.cc.i
+.PHONY : src/net/EventLoopThread.cc.i
+
+src/net/EventLoopThread.s: src/net/EventLoopThread.cc.s
+.PHONY : src/net/EventLoopThread.s
+
+# target to generate assembly for a file
+src/net/EventLoopThread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoopThread.cc.s
+.PHONY : src/net/EventLoopThread.cc.s
+
+src/net/EventLoopThreadPool.o: src/net/EventLoopThreadPool.cc.o
+.PHONY : src/net/EventLoopThreadPool.o
+
+# target to build an object file
+src/net/EventLoopThreadPool.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoopThreadPool.cc.o
+.PHONY : src/net/EventLoopThreadPool.cc.o
+
+src/net/EventLoopThreadPool.i: src/net/EventLoopThreadPool.cc.i
+.PHONY : src/net/EventLoopThreadPool.i
+
+# target to preprocess a source file
+src/net/EventLoopThreadPool.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoopThreadPool.cc.i
+.PHONY : src/net/EventLoopThreadPool.cc.i
+
+src/net/EventLoopThreadPool.s: src/net/EventLoopThreadPool.cc.s
+.PHONY : src/net/EventLoopThreadPool.s
+
+# target to generate assembly for a file
+src/net/EventLoopThreadPool.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/EventLoopThreadPool.cc.s
+.PHONY : src/net/EventLoopThreadPool.cc.s
+
 src/net/InetAddress.o: src/net/InetAddress.cc.o
 .PHONY : src/net/InetAddress.o
 
@@ -752,6 +826,54 @@ tests/test_event_loop.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop.dir/build.make CMakeFiles/test_event_loop.dir/tests/test_event_loop.cc.s
 .PHONY : tests/test_event_loop.cc.s
 
+tests/test_event_loop_thread.o: tests/test_event_loop_thread.cc.o
+.PHONY : tests/test_event_loop_thread.o
+
+# target to build an object file
+tests/test_event_loop_thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread.dir/build.make CMakeFiles/test_event_loop_thread.dir/tests/test_event_loop_thread.cc.o
+.PHONY : tests/test_event_loop_thread.cc.o
+
+tests/test_event_loop_thread.i: tests/test_event_loop_thread.cc.i
+.PHONY : tests/test_event_loop_thread.i
+
+# target to preprocess a source file
+tests/test_event_loop_thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread.dir/build.make CMakeFiles/test_event_loop_thread.dir/tests/test_event_loop_thread.cc.i
+.PHONY : tests/test_event_loop_thread.cc.i
+
+tests/test_event_loop_thread.s: tests/test_event_loop_thread.cc.s
+.PHONY : tests/test_event_loop_thread.s
+
+# target to generate assembly for a file
+tests/test_event_loop_thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread.dir/build.make CMakeFiles/test_event_loop_thread.dir/tests/test_event_loop_thread.cc.s
+.PHONY : tests/test_event_loop_thread.cc.s
+
+tests/test_event_loop_thread_pool.o: tests/test_event_loop_thread_pool.cc.o
+.PHONY : tests/test_event_loop_thread_pool.o
+
+# target to build an object file
+tests/test_event_loop_thread_pool.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread_pool.dir/build.make CMakeFiles/test_event_loop_thread_pool.dir/tests/test_event_loop_thread_pool.cc.o
+.PHONY : tests/test_event_loop_thread_pool.cc.o
+
+tests/test_event_loop_thread_pool.i: tests/test_event_loop_thread_pool.cc.i
+.PHONY : tests/test_event_loop_thread_pool.i
+
+# target to preprocess a source file
+tests/test_event_loop_thread_pool.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread_pool.dir/build.make CMakeFiles/test_event_loop_thread_pool.dir/tests/test_event_loop_thread_pool.cc.i
+.PHONY : tests/test_event_loop_thread_pool.cc.i
+
+tests/test_event_loop_thread_pool.s: tests/test_event_loop_thread_pool.cc.s
+.PHONY : tests/test_event_loop_thread_pool.s
+
+# target to generate assembly for a file
+tests/test_event_loop_thread_pool.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_event_loop_thread_pool.dir/build.make CMakeFiles/test_event_loop_thread_pool.dir/tests/test_event_loop_thread_pool.cc.s
+.PHONY : tests/test_event_loop_thread_pool.cc.s
+
 tests/test_socket_wrappers.o: tests/test_socket_wrappers.cc.o
 .PHONY : tests/test_socket_wrappers.o
 
@@ -864,6 +986,8 @@ help:
 	@echo "... test_buffer"
 	@echo "... test_epoll_poller"
 	@echo "... test_event_loop"
+	@echo "... test_event_loop_thread"
+	@echo "... test_event_loop_thread_pool"
 	@echo "... test_socket_wrappers"
 	@echo "... test_tcp_connection"
 	@echo "... test_tcp_server"
@@ -898,6 +1022,12 @@ help:
 	@echo "... src/net/EventLoop.o"
 	@echo "... src/net/EventLoop.i"
 	@echo "... src/net/EventLoop.s"
+	@echo "... src/net/EventLoopThread.o"
+	@echo "... src/net/EventLoopThread.i"
+	@echo "... src/net/EventLoopThread.s"
+	@echo "... src/net/EventLoopThreadPool.o"
+	@echo "... src/net/EventLoopThreadPool.i"
+	@echo "... src/net/EventLoopThreadPool.s"
 	@echo "... src/net/InetAddress.o"
 	@echo "... src/net/InetAddress.i"
 	@echo "... src/net/InetAddress.s"
@@ -928,6 +1058,12 @@ help:
 	@echo "... tests/test_event_loop.o"
 	@echo "... tests/test_event_loop.i"
 	@echo "... tests/test_event_loop.s"
+	@echo "... tests/test_event_loop_thread.o"
+	@echo "... tests/test_event_loop_thread.i"
+	@echo "... tests/test_event_loop_thread.s"
+	@echo "... tests/test_event_loop_thread_pool.o"
+	@echo "... tests/test_event_loop_thread_pool.i"
+	@echo "... tests/test_event_loop_thread_pool.s"
 	@echo "... tests/test_socket_wrappers.o"
 	@echo "... tests/test_socket_wrappers.i"
 	@echo "... tests/test_socket_wrappers.s"

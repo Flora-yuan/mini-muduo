@@ -35,6 +35,7 @@ TcpServer::TcpServer(EventLoop* loop,
     : loop_(loop),
       name_(name),
       acceptor_(new Acceptor(loop, listenAddr, true)),
+      threadPool_(new EventLoopThreadPool(loop, name)),
       connectionCallback_([](const TcpConnectionPtr&) {}),
       messageCallback_([](const TcpConnectionPtr&, Buffer*) {}),
       writeCompleteCallback_([](const TcpConnectionPtr&) {}),
@@ -56,10 +57,16 @@ void TcpServer::start()
 {
     if (!started_) {
         started_ = true;
+        threadPool_->start();
         loop_->runInLoop([this]() {
             acceptor_->listen();
         });
     }
+}
+
+void TcpServer::setThreadNum(int numThreads)
+{
+    threadPool_->setThreadNum(numThreads);
 }
 
 void TcpServer::setConnectionCallback(const ConnectionCallback& cb)
@@ -84,8 +91,10 @@ void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
     std::string connName = name_ + "-" + std::to_string(nextConnId_++);
     InetAddress localAddr = localAddressOf(sockfd);
 
+    EventLoop* ioLoop = threadPool_->getNextLoop();
+
     TcpConnectionPtr conn(new TcpConnection(
-        loop_,
+        ioLoop,
         connName,
         sockfd,
         localAddr,
@@ -101,7 +110,7 @@ void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
                   this,
                   std::placeholders::_1));
 
-    conn->connectEstablished();
+    ioLoop->runInLoop(std::bind(&TcpConnection::connectEstablished, conn));
 }
 
 void TcpServer::removeConnection(const TcpConnectionPtr& conn)
@@ -117,7 +126,8 @@ void TcpServer::removeConnectionInLoop(const TcpConnectionPtr& conn)
     loop_->assertInLoopThread();
 
     connections_.erase(conn->name());
-    conn->connectDestroyed();
+    EventLoop* ioLoop = conn->getLoop();
+    ioLoop->queueInLoop(std::bind(&TcpConnection::connectDestroyed, conn));
 }
 
 }  // namespace mini_muduo

@@ -4,6 +4,7 @@
 #include "base/nocopyable.h"
 #include "net/Acceptor.h"
 #include "net/InetAddress.h"
+#include "net/EventLoopThreadPool.h"
 #include "net/TcpConnection.h"
 
 #include <map>
@@ -27,6 +28,7 @@ public:
     ~TcpServer();
 
     void start();
+    void setThreadNum(int numThreads);
 
     void setConnectionCallback(const ConnectionCallback& cb);
     void setMessageCallback(const MessageCallback& cb);
@@ -43,6 +45,7 @@ private:
     EventLoop* loop_;
     const std::string name_;
     std::unique_ptr<Acceptor> acceptor_;
+    std::unique_ptr<EventLoopThreadPool> threadPool_;
     ConnectionCallback connectionCallback_;
     MessageCallback messageCallback_;
     WriteCompleteCallback writeCompleteCallback_;

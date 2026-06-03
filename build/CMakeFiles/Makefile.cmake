@@ -132,6 +132,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_socket_wrappers.dir/DependInfo.cmake"
   "CMakeFiles/test_epoll_poller.dir/DependInfo.cmake"
   "CMakeFiles/test_event_loop.dir/DependInfo.cmake"
+  "CMakeFiles/test_event_loop_thread.dir/DependInfo.cmake"
+  "CMakeFiles/test_event_loop_thread_pool.dir/DependInfo.cmake"
   "CMakeFiles/test_acceptor.dir/DependInfo.cmake"
   "CMakeFiles/test_buffer.dir/DependInfo.cmake"
   "CMakeFiles/test_tcp_connection.dir/DependInfo.cmake"

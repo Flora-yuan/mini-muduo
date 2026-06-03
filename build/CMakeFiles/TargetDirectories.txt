@@ -4,6 +4,8 @@
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_socket_wrappers.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_epoll_poller.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_event_loop.dir
+/home/flora/projects/mini_muduo/build/CMakeFiles/test_event_loop_thread.dir
+/home/flora/projects/mini_muduo/build/CMakeFiles/test_event_loop_thread_pool.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_acceptor.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_buffer.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_tcp_connection.dir
