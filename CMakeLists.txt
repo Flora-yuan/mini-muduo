@@ -20,6 +20,7 @@ add_library(mini_muduo STATIC
     src/net/Poller.cc
     src/net/SocketsOps.cc
     src/net/Socket.cc
+    src/net/TcpConnection.cc
 )
 
 add_executable(example_basic
@@ -75,6 +76,15 @@ add_executable(test_buffer
 )
 target_link_libraries(test_buffer mini_muduo)
 set_target_properties(test_buffer PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
+)
+
+
+add_executable(test_tcp_connection
+    tests/test_tcp_connection.cc
+)
+target_link_libraries(test_tcp_connection mini_muduo pthread)
+set_target_properties(test_tcp_connection PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
 )
 

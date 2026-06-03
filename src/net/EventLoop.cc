@@ -113,6 +113,13 @@ bool EventLoop::isInLoopThread() const
     return threadId_ == std::this_thread::get_id();
 }
 
+void EventLoop::assertInLoopThread() const
+{
+    if (!isInLoopThread()) {
+        LOG_FATAL("EventLoop used from a non-loop thread");
+    }
+}
+
 void EventLoop::wakeup()
 {
     uint64_t one = 1;

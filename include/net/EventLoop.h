@@ -32,6 +32,7 @@ public:
     void removeChannel(Channel* channel);
 
     bool isInLoopThread() const;
+    void assertInLoopThread() const;
 
 private:
     void wakeup();

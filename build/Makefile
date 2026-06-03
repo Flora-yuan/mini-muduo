@@ -221,6 +221,19 @@ test_buffer/fast:
 .PHONY : test_buffer/fast
 
 #=============================================================================
+# Target rules for targets named test_tcp_connection
+
+# Build rule for target.
+test_tcp_connection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_tcp_connection
+.PHONY : test_tcp_connection
+
+# fast build rule for target.
+test_tcp_connection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_connection.dir/build.make CMakeFiles/test_tcp_connection.dir/build
+.PHONY : test_tcp_connection/fast
+
+#=============================================================================
 # Target rules for targets named blocking_echo_server
 
 # Build rule for target.
@@ -545,6 +558,30 @@ src/net/SocketsOps.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.s
 .PHONY : src/net/SocketsOps.cc.s
 
+src/net/TcpConnection.o: src/net/TcpConnection.cc.o
+.PHONY : src/net/TcpConnection.o
+
+# target to build an object file
+src/net/TcpConnection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.o
+.PHONY : src/net/TcpConnection.cc.o
+
+src/net/TcpConnection.i: src/net/TcpConnection.cc.i
+.PHONY : src/net/TcpConnection.i
+
+# target to preprocess a source file
+src/net/TcpConnection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.i
+.PHONY : src/net/TcpConnection.cc.i
+
+src/net/TcpConnection.s: src/net/TcpConnection.cc.s
+.PHONY : src/net/TcpConnection.s
+
+# target to generate assembly for a file
+src/net/TcpConnection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.s
+.PHONY : src/net/TcpConnection.cc.s
+
 tests/test_acceptor.o: tests/test_acceptor.cc.o
 .PHONY : tests/test_acceptor.o
 
@@ -665,6 +702,30 @@ tests/test_socket_wrappers.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket_wrappers.dir/build.make CMakeFiles/test_socket_wrappers.dir/tests/test_socket_wrappers.cc.s
 .PHONY : tests/test_socket_wrappers.cc.s
 
+tests/test_tcp_connection.o: tests/test_tcp_connection.cc.o
+.PHONY : tests/test_tcp_connection.o
+
+# target to build an object file
+tests/test_tcp_connection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_connection.dir/build.make CMakeFiles/test_tcp_connection.dir/tests/test_tcp_connection.cc.o
+.PHONY : tests/test_tcp_connection.cc.o
+
+tests/test_tcp_connection.i: tests/test_tcp_connection.cc.i
+.PHONY : tests/test_tcp_connection.i
+
+# target to preprocess a source file
+tests/test_tcp_connection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_connection.dir/build.make CMakeFiles/test_tcp_connection.dir/tests/test_tcp_connection.cc.i
+.PHONY : tests/test_tcp_connection.cc.i
+
+tests/test_tcp_connection.s: tests/test_tcp_connection.cc.s
+.PHONY : tests/test_tcp_connection.s
+
+# target to generate assembly for a file
+tests/test_tcp_connection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_connection.dir/build.make CMakeFiles/test_tcp_connection.dir/tests/test_tcp_connection.cc.s
+.PHONY : tests/test_tcp_connection.cc.s
+
 tests/test_timestamp.o: tests/test_timestamp.cc.o
 .PHONY : tests/test_timestamp.o
 
@@ -705,6 +766,7 @@ help:
 	@echo "... test_epoll_poller"
 	@echo "... test_event_loop"
 	@echo "... test_socket_wrappers"
+	@echo "... test_tcp_connection"
 	@echo "... test_timestamp"
 	@echo "... examples/blocking_echo_server.o"
 	@echo "... examples/blocking_echo_server.i"
@@ -745,6 +807,9 @@ help:
 	@echo "... src/net/SocketsOps.o"
 	@echo "... src/net/SocketsOps.i"
 	@echo "... src/net/SocketsOps.s"
+	@echo "... src/net/TcpConnection.o"
+	@echo "... src/net/TcpConnection.i"
+	@echo "... src/net/TcpConnection.s"
 	@echo "... tests/test_acceptor.o"
 	@echo "... tests/test_acceptor.i"
 	@echo "... tests/test_acceptor.s"
@@ -760,6 +825,9 @@ help:
 	@echo "... tests/test_socket_wrappers.o"
 	@echo "... tests/test_socket_wrappers.i"
 	@echo "... tests/test_socket_wrappers.s"
+	@echo "... tests/test_tcp_connection.o"
+	@echo "... tests/test_tcp_connection.i"
+	@echo "... tests/test_tcp_connection.s"
 	@echo "... tests/test_timestamp.o"
 	@echo "... tests/test_timestamp.i"
 	@echo "... tests/test_timestamp.s"

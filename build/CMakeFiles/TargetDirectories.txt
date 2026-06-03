@@ -6,6 +6,7 @@
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_event_loop.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_acceptor.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_buffer.dir
+/home/flora/projects/mini_muduo/build/CMakeFiles/test_tcp_connection.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/blocking_echo_server.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/edit_cache.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/rebuild_cache.dir

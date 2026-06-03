@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o.d"
   "CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o"
   "CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o.d"
+  "CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.o"
+  "CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.o.d"
   "libmini_muduo.a"
   "libmini_muduo.pdb"
 )
