@@ -208,6 +208,19 @@ test_acceptor/fast:
 .PHONY : test_acceptor/fast
 
 #=============================================================================
+# Target rules for targets named test_buffer
+
+# Build rule for target.
+test_buffer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_buffer
+.PHONY : test_buffer
+
+# fast build rule for target.
+test_buffer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/build
+.PHONY : test_buffer/fast
+
+#=============================================================================
 # Target rules for targets named blocking_echo_server
 
 # Build rule for target.
@@ -339,6 +352,30 @@ src/net/Acceptor.s: src/net/Acceptor.cc.s
 src/net/Acceptor.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.s
 .PHONY : src/net/Acceptor.cc.s
+
+src/net/Buffer.o: src/net/Buffer.cc.o
+.PHONY : src/net/Buffer.o
+
+# target to build an object file
+src/net/Buffer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Buffer.cc.o
+.PHONY : src/net/Buffer.cc.o
+
+src/net/Buffer.i: src/net/Buffer.cc.i
+.PHONY : src/net/Buffer.i
+
+# target to preprocess a source file
+src/net/Buffer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Buffer.cc.i
+.PHONY : src/net/Buffer.cc.i
+
+src/net/Buffer.s: src/net/Buffer.cc.s
+.PHONY : src/net/Buffer.s
+
+# target to generate assembly for a file
+src/net/Buffer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Buffer.cc.s
+.PHONY : src/net/Buffer.cc.s
 
 src/net/Channel.o: src/net/Channel.cc.o
 .PHONY : src/net/Channel.o
@@ -532,6 +569,30 @@ tests/test_acceptor.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptor.dir/build.make CMakeFiles/test_acceptor.dir/tests/test_acceptor.cc.s
 .PHONY : tests/test_acceptor.cc.s
 
+tests/test_buffer.o: tests/test_buffer.cc.o
+.PHONY : tests/test_buffer.o
+
+# target to build an object file
+tests/test_buffer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/tests/test_buffer.cc.o
+.PHONY : tests/test_buffer.cc.o
+
+tests/test_buffer.i: tests/test_buffer.cc.i
+.PHONY : tests/test_buffer.i
+
+# target to preprocess a source file
+tests/test_buffer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/tests/test_buffer.cc.i
+.PHONY : tests/test_buffer.cc.i
+
+tests/test_buffer.s: tests/test_buffer.cc.s
+.PHONY : tests/test_buffer.s
+
+# target to generate assembly for a file
+tests/test_buffer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/tests/test_buffer.cc.s
+.PHONY : tests/test_buffer.cc.s
+
 tests/test_epoll_poller.o: tests/test_epoll_poller.cc.o
 .PHONY : tests/test_epoll_poller.o
 
@@ -640,6 +701,7 @@ help:
 	@echo "... example_basic"
 	@echo "... mini_muduo"
 	@echo "... test_acceptor"
+	@echo "... test_buffer"
 	@echo "... test_epoll_poller"
 	@echo "... test_event_loop"
 	@echo "... test_socket_wrappers"
@@ -659,6 +721,9 @@ help:
 	@echo "... src/net/Acceptor.o"
 	@echo "... src/net/Acceptor.i"
 	@echo "... src/net/Acceptor.s"
+	@echo "... src/net/Buffer.o"
+	@echo "... src/net/Buffer.i"
+	@echo "... src/net/Buffer.s"
 	@echo "... src/net/Channel.o"
 	@echo "... src/net/Channel.i"
 	@echo "... src/net/Channel.s"
@@ -683,6 +748,9 @@ help:
 	@echo "... tests/test_acceptor.o"
 	@echo "... tests/test_acceptor.i"
 	@echo "... tests/test_acceptor.s"
+	@echo "... tests/test_buffer.o"
+	@echo "... tests/test_buffer.i"
+	@echo "... tests/test_buffer.s"
 	@echo "... tests/test_epoll_poller.o"
 	@echo "... tests/test_epoll_poller.i"
 	@echo "... tests/test_epoll_poller.s"

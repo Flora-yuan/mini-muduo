@@ -12,6 +12,7 @@ add_library(mini_muduo STATIC
     src/base/Logger.cc
     src/base/Timestamp.cc
     src/net/Acceptor.cc
+    src/net/Buffer.cc
     src/net/Channel.cc
     src/net/EPollPoller.cc
     src/net/EventLoop.cc
@@ -66,6 +67,14 @@ add_executable(test_acceptor
 )
 target_link_libraries(test_acceptor mini_muduo pthread)
 set_target_properties(test_acceptor PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
+)
+
+add_executable(test_buffer
+    tests/test_buffer.cc
+)
+target_link_libraries(test_buffer mini_muduo)
+set_target_properties(test_buffer PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
 )
 

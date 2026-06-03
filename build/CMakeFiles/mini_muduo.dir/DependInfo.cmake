@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/flora/projects/mini_muduo/src/base/Logger.cc" "CMakeFiles/mini_muduo.dir/src/base/Logger.cc.o" "gcc" "CMakeFiles/mini_muduo.dir/src/base/Logger.cc.o.d"
   "/home/flora/projects/mini_muduo/src/base/Timestamp.cc" "CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.o" "gcc" "CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.o.d"
   "/home/flora/projects/mini_muduo/src/net/Acceptor.cc" "CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.o" "gcc" "CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.o.d"
+  "/home/flora/projects/mini_muduo/src/net/Buffer.cc" "CMakeFiles/mini_muduo.dir/src/net/Buffer.cc.o" "gcc" "CMakeFiles/mini_muduo.dir/src/net/Buffer.cc.o.d"
   "/home/flora/projects/mini_muduo/src/net/Channel.cc" "CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o" "gcc" "CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o.d"
   "/home/flora/projects/mini_muduo/src/net/EPollPoller.cc" "CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o" "gcc" "CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o.d"
   "/home/flora/projects/mini_muduo/src/net/EventLoop.cc" "CMakeFiles/mini_muduo.dir/src/net/EventLoop.cc.o" "gcc" "CMakeFiles/mini_muduo.dir/src/net/EventLoop.cc.o.d"

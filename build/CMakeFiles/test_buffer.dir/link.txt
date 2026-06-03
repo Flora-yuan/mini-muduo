@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_buffer.dir/tests/test_buffer.cc.o -o tests/test_buffer  libmini_muduo.a 

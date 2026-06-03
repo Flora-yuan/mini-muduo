@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_muduo.dir/src/base/Timestamp.cc.o.d"
   "CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.o"
   "CMakeFiles/mini_muduo.dir/src/net/Acceptor.cc.o.d"
+  "CMakeFiles/mini_muduo.dir/src/net/Buffer.cc.o"
+  "CMakeFiles/mini_muduo.dir/src/net/Buffer.cc.o.d"
   "CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o"
   "CMakeFiles/mini_muduo.dir/src/net/Channel.cc.o.d"
   "CMakeFiles/mini_muduo.dir/src/net/EPollPoller.cc.o"
