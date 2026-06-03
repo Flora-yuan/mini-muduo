@@ -39,6 +39,11 @@ private:
     int64_t microSecondsSinceEpoch_;
 };
 
+// 时间戳比较和偏移工具，供定时器模块按到期时间排序。
+bool operator<(Timestamp lhs, Timestamp rhs);
+bool operator==(Timestamp lhs, Timestamp rhs);
+Timestamp addTime(Timestamp timestamp, double seconds);
+
 }  // namespace mini_muduo
 
 #endif  // MINI_MUDUO_BASE_TIMESTAMP_H

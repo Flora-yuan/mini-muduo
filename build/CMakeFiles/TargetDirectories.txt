@@ -8,6 +8,7 @@
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_event_loop_thread_pool.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_acceptor.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_buffer.dir
+/home/flora/projects/mini_muduo/build/CMakeFiles/test_timer_queue.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_tcp_connection.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_tcp_server.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/blocking_echo_server.dir

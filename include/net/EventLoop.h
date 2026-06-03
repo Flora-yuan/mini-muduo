@@ -1,8 +1,10 @@
 #ifndef MINI_MUDUO_NET_EVENTLOOP_H
 #define MINI_MUDUO_NET_EVENTLOOP_H
 
+#include "base/Timestamp.h"
 #include "base/nocopyable.h"
 #include "net/Poller.h"
+#include "net/TimerId.h"
 
 #include <atomic>
 #include <functional>
@@ -14,10 +16,12 @@
 namespace mini_muduo {
 
 class Channel;
+class TimerQueue;
 
 class EventLoop : public nocopyable {
 public:
     using Functor = std::function<void()>;
+    using TimerCallback = std::function<void()>;
 
     EventLoop();
     ~EventLoop();
@@ -27,6 +31,11 @@ public:
 
     void runInLoop(Functor cb);
     void queueInLoop(Functor cb);
+
+    TimerId runAt(Timestamp time, TimerCallback cb);
+    TimerId runAfter(double delay, TimerCallback cb);
+    TimerId runEvery(double interval, TimerCallback cb);
+    void cancel(TimerId timerId);
 
     void updateChannel(Channel* channel);
     void removeChannel(Channel* channel);
@@ -48,6 +57,7 @@ private:
     const std::thread::id threadId_;
 
     std::unique_ptr<Poller> poller_;
+    std::unique_ptr<TimerQueue> timerQueue_;
     int wakeupFd_;
     std::unique_ptr<Channel> wakeupChannel_;
     ChannelList activeChannels_;

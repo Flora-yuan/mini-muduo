@@ -247,6 +247,19 @@ test_buffer/fast:
 .PHONY : test_buffer/fast
 
 #=============================================================================
+# Target rules for targets named test_timer_queue
+
+# Build rule for target.
+test_timer_queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_timer_queue
+.PHONY : test_timer_queue
+
+# fast build rule for target.
+test_timer_queue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timer_queue.dir/build.make CMakeFiles/test_timer_queue.dir/build
+.PHONY : test_timer_queue/fast
+
+#=============================================================================
 # Target rules for targets named test_tcp_connection
 
 # Build rule for target.
@@ -730,6 +743,54 @@ src/net/TcpServer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.s
 .PHONY : src/net/TcpServer.cc.s
 
+src/net/Timer.o: src/net/Timer.cc.o
+.PHONY : src/net/Timer.o
+
+# target to build an object file
+src/net/Timer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Timer.cc.o
+.PHONY : src/net/Timer.cc.o
+
+src/net/Timer.i: src/net/Timer.cc.i
+.PHONY : src/net/Timer.i
+
+# target to preprocess a source file
+src/net/Timer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Timer.cc.i
+.PHONY : src/net/Timer.cc.i
+
+src/net/Timer.s: src/net/Timer.cc.s
+.PHONY : src/net/Timer.s
+
+# target to generate assembly for a file
+src/net/Timer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/Timer.cc.s
+.PHONY : src/net/Timer.cc.s
+
+src/net/TimerQueue.o: src/net/TimerQueue.cc.o
+.PHONY : src/net/TimerQueue.o
+
+# target to build an object file
+src/net/TimerQueue.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/TimerQueue.cc.o
+.PHONY : src/net/TimerQueue.cc.o
+
+src/net/TimerQueue.i: src/net/TimerQueue.cc.i
+.PHONY : src/net/TimerQueue.i
+
+# target to preprocess a source file
+src/net/TimerQueue.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/TimerQueue.cc.i
+.PHONY : src/net/TimerQueue.cc.i
+
+src/net/TimerQueue.s: src/net/TimerQueue.cc.s
+.PHONY : src/net/TimerQueue.s
+
+# target to generate assembly for a file
+src/net/TimerQueue.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_muduo.dir/build.make CMakeFiles/mini_muduo.dir/src/net/TimerQueue.cc.s
+.PHONY : src/net/TimerQueue.cc.s
+
 tests/test_acceptor.o: tests/test_acceptor.cc.o
 .PHONY : tests/test_acceptor.o
 
@@ -946,6 +1007,30 @@ tests/test_tcp_server.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.s
 .PHONY : tests/test_tcp_server.cc.s
 
+tests/test_timer_queue.o: tests/test_timer_queue.cc.o
+.PHONY : tests/test_timer_queue.o
+
+# target to build an object file
+tests/test_timer_queue.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timer_queue.dir/build.make CMakeFiles/test_timer_queue.dir/tests/test_timer_queue.cc.o
+.PHONY : tests/test_timer_queue.cc.o
+
+tests/test_timer_queue.i: tests/test_timer_queue.cc.i
+.PHONY : tests/test_timer_queue.i
+
+# target to preprocess a source file
+tests/test_timer_queue.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timer_queue.dir/build.make CMakeFiles/test_timer_queue.dir/tests/test_timer_queue.cc.i
+.PHONY : tests/test_timer_queue.cc.i
+
+tests/test_timer_queue.s: tests/test_timer_queue.cc.s
+.PHONY : tests/test_timer_queue.s
+
+# target to generate assembly for a file
+tests/test_timer_queue.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_timer_queue.dir/build.make CMakeFiles/test_timer_queue.dir/tests/test_timer_queue.cc.s
+.PHONY : tests/test_timer_queue.cc.s
+
 tests/test_timestamp.o: tests/test_timestamp.cc.o
 .PHONY : tests/test_timestamp.o
 
@@ -991,6 +1076,7 @@ help:
 	@echo "... test_socket_wrappers"
 	@echo "... test_tcp_connection"
 	@echo "... test_tcp_server"
+	@echo "... test_timer_queue"
 	@echo "... test_timestamp"
 	@echo "... examples/blocking_echo_server.o"
 	@echo "... examples/blocking_echo_server.i"
@@ -1046,6 +1132,12 @@ help:
 	@echo "... src/net/TcpServer.o"
 	@echo "... src/net/TcpServer.i"
 	@echo "... src/net/TcpServer.s"
+	@echo "... src/net/Timer.o"
+	@echo "... src/net/Timer.i"
+	@echo "... src/net/Timer.s"
+	@echo "... src/net/TimerQueue.o"
+	@echo "... src/net/TimerQueue.i"
+	@echo "... src/net/TimerQueue.s"
 	@echo "... tests/test_acceptor.o"
 	@echo "... tests/test_acceptor.i"
 	@echo "... tests/test_acceptor.s"
@@ -1073,6 +1165,9 @@ help:
 	@echo "... tests/test_tcp_server.o"
 	@echo "... tests/test_tcp_server.i"
 	@echo "... tests/test_tcp_server.s"
+	@echo "... tests/test_timer_queue.o"
+	@echo "... tests/test_timer_queue.i"
+	@echo "... tests/test_timer_queue.s"
 	@echo "... tests/test_timestamp.o"
 	@echo "... tests/test_timestamp.i"
 	@echo "... tests/test_timestamp.s"

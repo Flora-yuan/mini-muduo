@@ -29,6 +29,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.o.d"
   "CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o"
   "CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o.d"
+  "CMakeFiles/mini_muduo.dir/src/net/Timer.cc.o"
+  "CMakeFiles/mini_muduo.dir/src/net/Timer.cc.o.d"
+  "CMakeFiles/mini_muduo.dir/src/net/TimerQueue.cc.o"
+  "CMakeFiles/mini_muduo.dir/src/net/TimerQueue.cc.o.d"
   "libmini_muduo.a"
   "libmini_muduo.pdb"
 )

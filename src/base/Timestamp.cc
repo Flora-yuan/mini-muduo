@@ -76,4 +76,20 @@ Timestamp Timestamp::invalid()
     return Timestamp();
 }
 
+bool operator<(Timestamp lhs, Timestamp rhs)
+{
+    return lhs.microSecondsSinceEpoch() < rhs.microSecondsSinceEpoch();
+}
+
+bool operator==(Timestamp lhs, Timestamp rhs)
+{
+    return lhs.microSecondsSinceEpoch() == rhs.microSecondsSinceEpoch();
+}
+
+Timestamp addTime(Timestamp timestamp, double seconds)
+{
+    int64_t delta = static_cast<int64_t>(seconds * 1000000);
+    return Timestamp(timestamp.microSecondsSinceEpoch() + delta);
+}
+
 }  // namespace mini_muduo

@@ -24,6 +24,8 @@ add_library(mini_muduo STATIC
     src/net/Socket.cc
     src/net/TcpConnection.cc
     src/net/TcpServer.cc
+    src/net/Timer.cc
+    src/net/TimerQueue.cc
 )
 
 add_executable(example_basic
@@ -98,6 +100,14 @@ set_target_properties(test_buffer PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
 )
 
+
+add_executable(test_timer_queue
+    tests/test_timer_queue.cc
+)
+target_link_libraries(test_timer_queue mini_muduo pthread)
+set_target_properties(test_timer_queue PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
+)
 
 add_executable(test_tcp_connection
     tests/test_tcp_connection.cc
