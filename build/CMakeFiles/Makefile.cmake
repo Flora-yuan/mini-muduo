@@ -135,5 +135,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_acceptor.dir/DependInfo.cmake"
   "CMakeFiles/test_buffer.dir/DependInfo.cmake"
   "CMakeFiles/test_tcp_connection.dir/DependInfo.cmake"
+  "CMakeFiles/test_tcp_server.dir/DependInfo.cmake"
   "CMakeFiles/blocking_echo_server.dir/DependInfo.cmake"
+  "CMakeFiles/echo_server.dir/DependInfo.cmake"
   )

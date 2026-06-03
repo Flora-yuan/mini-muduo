@@ -21,6 +21,7 @@ add_library(mini_muduo STATIC
     src/net/SocketsOps.cc
     src/net/Socket.cc
     src/net/TcpConnection.cc
+    src/net/TcpServer.cc
 )
 
 add_executable(example_basic
@@ -88,10 +89,26 @@ set_target_properties(test_tcp_connection PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
 )
 
+add_executable(test_tcp_server
+    tests/test_tcp_server.cc
+)
+target_link_libraries(test_tcp_server mini_muduo pthread)
+set_target_properties(test_tcp_server PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
+)
+
 add_executable(blocking_echo_server
     examples/blocking_echo_server.cc
 )
 target_link_libraries(blocking_echo_server mini_muduo)
 set_target_properties(blocking_echo_server PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/examples
+)
+
+add_executable(echo_server
+    examples/echo_server.cc
+)
+target_link_libraries(echo_server mini_muduo)
+set_target_properties(echo_server PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/examples
 )

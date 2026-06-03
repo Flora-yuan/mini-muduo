@@ -237,6 +237,20 @@ CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/TcpConnection.cc -o CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.s
 
+CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o: CMakeFiles/mini_muduo.dir/flags.make
+CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o: /home/flora/projects/mini_muduo/src/net/TcpServer.cc
+CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o: CMakeFiles/mini_muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o -MF CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o.d -o CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o -c /home/flora/projects/mini_muduo/src/net/TcpServer.cc
+
+CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flora/projects/mini_muduo/src/net/TcpServer.cc > CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.i
+
+CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flora/projects/mini_muduo/src/net/TcpServer.cc -o CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.s
+
 # Object files for target mini_muduo
 mini_muduo_OBJECTS = \
 "CMakeFiles/mini_muduo.dir/src/base/Logger.cc.o" \
@@ -250,7 +264,8 @@ mini_muduo_OBJECTS = \
 "CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o" \
 "CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o" \
 "CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o" \
-"CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.o"
+"CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.o" \
+"CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o"
 
 # External object files for target mini_muduo
 mini_muduo_EXTERNAL_OBJECTS =
@@ -267,9 +282,10 @@ libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/Poller.cc.o
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/SocketsOps.cc.o
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/Socket.cc.o
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/TcpConnection.cc.o
+libmini_muduo.a: CMakeFiles/mini_muduo.dir/src/net/TcpServer.cc.o
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/build.make
 libmini_muduo.a: CMakeFiles/mini_muduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libmini_muduo.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/flora/projects/mini_muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libmini_muduo.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/mini_muduo.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mini_muduo.dir/link.txt --verbose=$(VERBOSE)
 
