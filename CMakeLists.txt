@@ -136,7 +136,31 @@ set_target_properties(blocking_echo_server PROPERTIES
 add_executable(echo_server
     examples/echo_server.cc
 )
-target_link_libraries(echo_server mini_muduo)
+target_link_libraries(echo_server mini_muduo pthread)
 set_target_properties(echo_server PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/examples
+)
+
+add_executable(discard_server
+    examples/discard_server.cc
+)
+target_link_libraries(discard_server mini_muduo pthread)
+set_target_properties(discard_server PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/examples
+)
+
+add_executable(benchmark_client
+    examples/benchmark_client.cc
+)
+target_link_libraries(benchmark_client pthread)
+set_target_properties(benchmark_client PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/examples
+)
+
+add_executable(test_echo_server_integration
+    tests/test_echo_server_integration.cc
+)
+target_link_libraries(test_echo_server_integration mini_muduo pthread)
+set_target_properties(test_echo_server_integration PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/tests
 )

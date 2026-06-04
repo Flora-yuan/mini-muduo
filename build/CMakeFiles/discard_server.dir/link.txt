@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/discard_server.dir/examples/discard_server.cc.o -o examples/discard_server  libmini_muduo.a -lpthread 

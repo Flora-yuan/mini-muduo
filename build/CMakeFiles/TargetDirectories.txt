@@ -13,5 +13,8 @@
 /home/flora/projects/mini_muduo/build/CMakeFiles/test_tcp_server.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/blocking_echo_server.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/echo_server.dir
+/home/flora/projects/mini_muduo/build/CMakeFiles/discard_server.dir
+/home/flora/projects/mini_muduo/build/CMakeFiles/benchmark_client.dir
+/home/flora/projects/mini_muduo/build/CMakeFiles/test_echo_server_integration.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/edit_cache.dir
 /home/flora/projects/mini_muduo/build/CMakeFiles/rebuild_cache.dir

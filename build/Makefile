@@ -311,6 +311,69 @@ echo_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
 .PHONY : echo_server/fast
 
+#=============================================================================
+# Target rules for targets named discard_server
+
+# Build rule for target.
+discard_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 discard_server
+.PHONY : discard_server
+
+# fast build rule for target.
+discard_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/discard_server.dir/build.make CMakeFiles/discard_server.dir/build
+.PHONY : discard_server/fast
+
+#=============================================================================
+# Target rules for targets named benchmark_client
+
+# Build rule for target.
+benchmark_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_client
+.PHONY : benchmark_client
+
+# fast build rule for target.
+benchmark_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_client.dir/build.make CMakeFiles/benchmark_client.dir/build
+.PHONY : benchmark_client/fast
+
+#=============================================================================
+# Target rules for targets named test_echo_server_integration
+
+# Build rule for target.
+test_echo_server_integration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_echo_server_integration
+.PHONY : test_echo_server_integration
+
+# fast build rule for target.
+test_echo_server_integration/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_echo_server_integration.dir/build.make CMakeFiles/test_echo_server_integration.dir/build
+.PHONY : test_echo_server_integration/fast
+
+examples/benchmark_client.o: examples/benchmark_client.cc.o
+.PHONY : examples/benchmark_client.o
+
+# target to build an object file
+examples/benchmark_client.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_client.dir/build.make CMakeFiles/benchmark_client.dir/examples/benchmark_client.cc.o
+.PHONY : examples/benchmark_client.cc.o
+
+examples/benchmark_client.i: examples/benchmark_client.cc.i
+.PHONY : examples/benchmark_client.i
+
+# target to preprocess a source file
+examples/benchmark_client.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_client.dir/build.make CMakeFiles/benchmark_client.dir/examples/benchmark_client.cc.i
+.PHONY : examples/benchmark_client.cc.i
+
+examples/benchmark_client.s: examples/benchmark_client.cc.s
+.PHONY : examples/benchmark_client.s
+
+# target to generate assembly for a file
+examples/benchmark_client.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_client.dir/build.make CMakeFiles/benchmark_client.dir/examples/benchmark_client.cc.s
+.PHONY : examples/benchmark_client.cc.s
+
 examples/blocking_echo_server.o: examples/blocking_echo_server.cc.o
 .PHONY : examples/blocking_echo_server.o
 
@@ -334,6 +397,30 @@ examples/blocking_echo_server.s: examples/blocking_echo_server.cc.s
 examples/blocking_echo_server.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blocking_echo_server.dir/build.make CMakeFiles/blocking_echo_server.dir/examples/blocking_echo_server.cc.s
 .PHONY : examples/blocking_echo_server.cc.s
+
+examples/discard_server.o: examples/discard_server.cc.o
+.PHONY : examples/discard_server.o
+
+# target to build an object file
+examples/discard_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/discard_server.dir/build.make CMakeFiles/discard_server.dir/examples/discard_server.cc.o
+.PHONY : examples/discard_server.cc.o
+
+examples/discard_server.i: examples/discard_server.cc.i
+.PHONY : examples/discard_server.i
+
+# target to preprocess a source file
+examples/discard_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/discard_server.dir/build.make CMakeFiles/discard_server.dir/examples/discard_server.cc.i
+.PHONY : examples/discard_server.cc.i
+
+examples/discard_server.s: examples/discard_server.cc.s
+.PHONY : examples/discard_server.s
+
+# target to generate assembly for a file
+examples/discard_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/discard_server.dir/build.make CMakeFiles/discard_server.dir/examples/discard_server.cc.s
+.PHONY : examples/discard_server.cc.s
 
 examples/echo_server.o: examples/echo_server.cc.o
 .PHONY : examples/echo_server.o
@@ -839,6 +926,30 @@ tests/test_buffer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_buffer.dir/build.make CMakeFiles/test_buffer.dir/tests/test_buffer.cc.s
 .PHONY : tests/test_buffer.cc.s
 
+tests/test_echo_server_integration.o: tests/test_echo_server_integration.cc.o
+.PHONY : tests/test_echo_server_integration.o
+
+# target to build an object file
+tests/test_echo_server_integration.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_echo_server_integration.dir/build.make CMakeFiles/test_echo_server_integration.dir/tests/test_echo_server_integration.cc.o
+.PHONY : tests/test_echo_server_integration.cc.o
+
+tests/test_echo_server_integration.i: tests/test_echo_server_integration.cc.i
+.PHONY : tests/test_echo_server_integration.i
+
+# target to preprocess a source file
+tests/test_echo_server_integration.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_echo_server_integration.dir/build.make CMakeFiles/test_echo_server_integration.dir/tests/test_echo_server_integration.cc.i
+.PHONY : tests/test_echo_server_integration.cc.i
+
+tests/test_echo_server_integration.s: tests/test_echo_server_integration.cc.s
+.PHONY : tests/test_echo_server_integration.s
+
+# target to generate assembly for a file
+tests/test_echo_server_integration.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_echo_server_integration.dir/build.make CMakeFiles/test_echo_server_integration.dir/tests/test_echo_server_integration.cc.s
+.PHONY : tests/test_echo_server_integration.cc.s
+
 tests/test_epoll_poller.o: tests/test_epoll_poller.cc.o
 .PHONY : tests/test_epoll_poller.o
 
@@ -1063,12 +1174,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... benchmark_client"
 	@echo "... blocking_echo_server"
+	@echo "... discard_server"
 	@echo "... echo_server"
 	@echo "... example_basic"
 	@echo "... mini_muduo"
 	@echo "... test_acceptor"
 	@echo "... test_buffer"
+	@echo "... test_echo_server_integration"
 	@echo "... test_epoll_poller"
 	@echo "... test_event_loop"
 	@echo "... test_event_loop_thread"
@@ -1078,9 +1192,15 @@ help:
 	@echo "... test_tcp_server"
 	@echo "... test_timer_queue"
 	@echo "... test_timestamp"
+	@echo "... examples/benchmark_client.o"
+	@echo "... examples/benchmark_client.i"
+	@echo "... examples/benchmark_client.s"
 	@echo "... examples/blocking_echo_server.o"
 	@echo "... examples/blocking_echo_server.i"
 	@echo "... examples/blocking_echo_server.s"
+	@echo "... examples/discard_server.o"
+	@echo "... examples/discard_server.i"
+	@echo "... examples/discard_server.s"
 	@echo "... examples/echo_server.o"
 	@echo "... examples/echo_server.i"
 	@echo "... examples/echo_server.s"
@@ -1144,6 +1264,9 @@ help:
 	@echo "... tests/test_buffer.o"
 	@echo "... tests/test_buffer.i"
 	@echo "... tests/test_buffer.s"
+	@echo "... tests/test_echo_server_integration.o"
+	@echo "... tests/test_echo_server_integration.i"
+	@echo "... tests/test_echo_server_integration.s"
 	@echo "... tests/test_epoll_poller.o"
 	@echo "... tests/test_epoll_poller.i"
 	@echo "... tests/test_epoll_poller.s"

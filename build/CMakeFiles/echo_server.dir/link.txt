@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/echo_server.dir/examples/echo_server.cc.o -o examples/echo_server  libmini_muduo.a 
+/usr/bin/c++ CMakeFiles/echo_server.dir/examples/echo_server.cc.o -o examples/echo_server  libmini_muduo.a -lpthread 

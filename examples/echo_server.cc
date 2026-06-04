@@ -12,6 +12,7 @@ int main()
 {
     EventLoop loop;
     TcpServer server(&loop, InetAddress(9001), "EchoServer");
+    server.setThreadNum(3);
 
     server.setConnectionCallback([](const TcpServer::TcpConnectionPtr& conn) {
         if (conn->connected()) {
